@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <meta charset="utf-8">   
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">  
+    <link rel="stylesheet" href="css/stylesheet.css" />
+</head>
+<body>
+
+
+    <div>@Html.ActionLink("Home", "Index", "Home")</div>
+    <div>@Html.ActionLink("About", "About", "Home")</div>
+    <div>@Html.ActionLink("Contact", "Contact", "Home")</div>
+    <div>@Html.ActionLink("Projects", "Projects", "Home")</div>
+    <div>@Html.ActionLink("feber?", "Checkfever", "Feber")</div>
+
+    <div>
+        @RenderBody()
+    </div>
+    <footer>@DateTime.Now.Year.</footer>
+</body>
+</html>
